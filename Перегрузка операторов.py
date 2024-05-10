@@ -3,19 +3,11 @@ class Buiding:
         self.numberOfFloors = numberOfFloors
         self.buildingType = buildingType
 
-    def __str__(self):
-        return str(self.buildingType)
-
-    def __int__(self):
-        return int(self.numberOfFloors)
-
     def __eq__(self, other):
         return self.numberOfFloors == other.buildingType
 
 
-numberOfFloors = Buiding(10, 'str')
-buildingType = Buiding(10, 'str')
+numberOfFloors = Buiding(10, '10')
+buildingType = Buiding(10, '10')
 res = numberOfFloors == buildingType
 print(res)
-if Buiding.__eq__(self=numberOfFloors, other=buildingType):
-    pass
